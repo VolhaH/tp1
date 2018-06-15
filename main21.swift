@@ -21,19 +21,3 @@ for word in words {
 }
 
 print (Double(average) / Double(words.count))
-
-let gl : [Character] = ["а", "у", "е", "о", "ы", "э", "я", "ю", "ё", "и"]
-var count = 0
-
-for word in dict {
-    var ggg = 0
-    word.key.forEach {
-        if gl.contains($0) {
-            ggg += 1
-        }
-    }
-    if ggg > 3 {
-        count += 1
-    }
-}
-print(count)
